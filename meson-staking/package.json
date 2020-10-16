@@ -1,0 +1,33 @@
+{
+  "name": "pion-meson-contract",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Rock-n-Block/meson-contract.git",
+  "author": "Euphemia Deathridge <ephdtrg@mintyclouds.in>",
+  "license": "MIT",
+  "scripts": {
+    "compile": "truffle compile",
+    "test": "./scripts/test.sh",
+    "deploy-kovan": "./scripts/fix-migrations.sh && truffle migrate --reset --network kovan",
+    "deploy-ropsten": "./scripts/fix-migrations.sh && truffle migrate --reset --network ropsten",
+    "deploy-live": "./scripts/fix-migrations.sh && truffle migrate --reset --network live",
+    "verify-kovan": "truffle run verify MesonContract --network kovan --license GPL-3.0-only",
+    "verify-ropsten": "truffle run verify MesonContract --network ropsten --license GPL-3.0-only",
+    "verify-live": "truffle run verify MesonContract  --network live --license GPL-3.0-only"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.1.0",
+    "ansi-colors": "^4.1.1",
+    "bn.js": "^5.1.3",
+    "chai": "^4.2.0",
+    "chai-bn": "^0.2.1",
+    "dotenv": "^8.2.0",
+    "ganache-core": "^2.12.1",
+    "openzeppelin-solidity": "2.5.0",
+    "semver": "^7.3.2",
+    "solidity-coverage": "^0.7.10",
+    "truffle": "^5.1.47",
+    "truffle-flattener": "^1.5.0",
+    "truffle-plugin-verify": "^0.4.0"
+  }
+}

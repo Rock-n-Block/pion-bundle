@@ -1,0 +1,29 @@
+{
+  "name": "pion_contract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rock-n-Block/pion_contract.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rock-n-Block/pion_contract/issues"
+  },
+  "homepage": "https://github.com/Rock-n-Block/pion_contract#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "openzeppelin-solidity": "^1.12.0",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "truffle-plugin-verify": "^0.4.0"
+  }
+}
